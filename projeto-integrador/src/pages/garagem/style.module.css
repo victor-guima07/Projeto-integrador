@@ -1,0 +1,159 @@
+.container {
+    min-height: calc(100vh - 164px);
+
+    width: 100%;
+    max-width: 1180px;
+
+    margin: 0 auto;
+
+    padding: 38px 25px 50px;
+}
+
+/* =========================
+   TOPO
+========================= */
+
+.topo {
+    position: relative;
+
+    min-height: 110px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo {
+    position: relative;
+
+    padding-left: 15px;
+
+    color: #f0f3f6;
+
+    font-size: 30px;
+}
+
+.titulo::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 2px;
+
+    width: 4px;
+    height: 32px;
+
+    background-color: #168cff;
+}
+
+.titulo span {
+    color: #168cff;
+}
+
+.topo p {
+    margin-top: 8px;
+
+    color: #d3dce5;
+
+    font-size: 14px;
+}
+
+.garagemDecorativa {
+    font-size: 95px;
+
+    opacity: 0.12;
+
+    filter: grayscale(1);
+}
+
+/* =========================
+   BOTÃO ADICIONAR
+========================= */
+
+.botaoAdicionar {
+    display: block;
+
+    margin: 10px 0 30px;
+
+    padding: 13px 20px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #075acb,
+            #086ee8
+        );
+
+    color: white;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.botaoAdicionar:hover {
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 5px 15px rgba(0, 117, 255, 0.3);
+}
+
+/* =========================
+   GRID
+========================= */
+
+.listaCarros {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 16px;
+}
+
+.vazio {
+    grid-column: 1 / -1;
+
+    padding: 40px;
+
+    text-align: center;
+
+    color: #b9c4cf;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 900px) {
+
+    .listaCarros {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 25px 15px;
+    }
+
+    .listaCarros {
+        grid-template-columns: 1fr;
+    }
+
+    .titulo {
+        font-size: 25px;
+    }
+
+    .garagemDecorativa {
+        display: none;
+    }
+}

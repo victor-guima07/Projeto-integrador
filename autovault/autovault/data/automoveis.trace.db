@@ -1,0 +1,27 @@
+2026-09-07 23:09:28.839331-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "AUTOMOVEL" not found (this database is empty); SQL statement:
+SELECT * FROM automovel [42104-240]
+2026-09-07 23:10:09.999302-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "AUTOMOVEL" not found (this database is empty); SQL statement:
+INSERT INTO automovel
+(ano, modelo, categoria, marca, cor)
+VALUES (?, ?, ?, ?, ?)
+ [42104-240]
+2026-09-07 23:10:12.983092-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "AUTOMOVEL" not found (this database is empty); SQL statement:
+INSERT INTO automovel
+(ano, modelo, categoria, marca, cor)
+VALUES (?, ?, ?, ?, ?)
+ [42104-240]
+2026-09-07 23:10:14.956047-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "AUTOMOVEL" not found (this database is empty); SQL statement:
+INSERT INTO automovel
+(ano, modelo, categoria, marca, cor)
+VALUES (?, ?, ?, ?, ?)
+ [42104-240]
+2026-09-07 23:10:21.927286-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "AUTOMOVEL" not found (this database is empty); SQL statement:
+SELECT * FROM automovel [42104-240]
+2026-09-07 23:11:47.181802-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "AUTOMOVEL" not found (this database is empty); SQL statement:
+SELECT * FROM automovel [42104-240]
